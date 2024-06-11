@@ -133,7 +133,7 @@ namespace UnityEngine.XR.OpenXR
 #if UNITY_2023_2_OR_NEWER
             EditorAnalytics.SendAnalytic(new XrInitializeAnalytic(data));
 #else
-            EditorAnalytics.SendEventWithLimit(kEventInitialize, data);
+            // EditorAnalytics.SendEventWithLimit(kEventInitialize, data);
 #endif //UNITY_2023_2_OR_NEWER
         }
 #else
